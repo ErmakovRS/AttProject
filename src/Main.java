@@ -4,6 +4,7 @@ public class Main {
         Seller seller = new Seller();
         Delivery delivery = new Delivery();
         Customer customer = new Customer();
+        OrderFeedback orderFeedback = new OrderFeedback();
 
         seller.showMenu();
         seller.menuChoice();
@@ -17,6 +18,7 @@ public class Main {
         System.out.println(" Приятного аппетита, пожалуйста оцените сервис от 1 до 10 для его улучшения");
 
         customer.getOrder();
+        orderFeedback.feedback();
 
         System.out.println(" Ждем вас снова!");
 

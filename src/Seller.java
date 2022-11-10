@@ -2,7 +2,7 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-
+//Abstract window toolkit
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -68,9 +68,9 @@ public class Seller extends JFrame {
         System.out.println(" Номер вашего заказа:" + orderNum);
         System.out.println(" Товар будет доставлен по адресу " + " Улица " + street + ", Дом " + house + ", Кв. " + flat + ".");
     }      public void timer() {
-        try {
+        try { //определяет исключение
             TimeUnit.SECONDS.sleep(5);
-        } catch (InterruptedException ie) {
+        } catch (InterruptedException ie) { // обрабатывает исключение
             Thread.currentThread().interrupt();
         }
     }
